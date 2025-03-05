@@ -1,35 +1,78 @@
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="styles.css">
-            <title>Contacto</title>
-        </head>
-        <body>
-            <header>
-                <nav class="navbar">
-                    <p>Mi portfolio</p>
-                    <ul id="nav-links">
-                        <li class="nav-link">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <form action="GET">
-                    <label for="name">Nombre</label>
-                </form>
-            </main>
-            <footer>
+<!DOCTYPE html>
+<html lang="en">
 
-            </footer>
-        </body>
-        </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <p>Mi portfolio</p>
+            <ul id="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <form>
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                    <label for="age">Edad</label>
+                    <input type="number" name="age" id="age">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="language">Idioma</label>
+                    <select name="language" id="language">
+                        <option value="eus">Euskera</option>
+                        <option value="es">Castellano</option>
+                        <option value="en">English</option>
+                    </select>
+                    <div class="newsletter-input">
+                        <label for="subscribe">Quieres suscribirte a mi newsletter?</label>
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                    </div>
+                    <label>Tu equipo favorito</label>
+                    <div class="team-inputs">
+                        <label for="teathleticam">Athletic Club</label>
+                        <input type="radio" name="team" id="team" value="Athletic Club">
+                        <label for="teathleticam">Real Sociedad</label>
+                        <input type="radio" name="team" id="team" value="Real Sociedad">
+                    </div>
+                </fieldset>
+                <label for="content">Escribe tu mensaje</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="contact-list">
+            <li class="contact-link">
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="contact-link">
+                <a href="https://github.com">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
