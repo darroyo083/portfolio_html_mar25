@@ -1,12 +1,25 @@
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c1d16;
+    color: white;
+    font-size: 1.1rem;
+}
+
+main {
+    flex-grow: 1;
+    align-content: center;
+    /* margin: 100px; */
 }
 
 .navbar {
     display: flex;
-    background-color: teal;
+    /* background-color: teal; */
     align-items: center;
     justify-content: center;
+    border-radius: 1vh;
 }
 
 .navbar p {
@@ -15,7 +28,7 @@ body {
 
 .navbar ul {
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -23,7 +36,7 @@ body {
 }
 ul {
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -43,6 +56,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 50px
+}
+
+#user-info img {
+    border-radius: 1vh;
 }
 
 #user-info .user-info-text {
@@ -58,25 +76,54 @@ a {
 
 .cards {
     display: flex;
-    border: 10px solid red;
+    /* border: 10px solid red; */
     padding: 20px;
-    background: #ccc;
+    /* background: #ccc; */
     /* flex-direction: row; */
     /* width: 80%; /
     / margin: 0 auto; */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
 }
 
 .card {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     padding: 15px;
     width: 320px;
-    margin: 15px;
+    margin: 40px;
     text-align: center;
+    background-color: #21835b;
+    border-radius: 2%;
+}
+
+.card h1 {
+    color:#3fd99c;
 }
 
 #contact-form * {
     display: block;
+}
+
+.nav-link a {
+    background-color: #40d99b;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 10px;
+    color: white
+}
+
+footer {
+    border-radius: 1vh;
+    border-top: 1px solid rgba(145, 145, 145, 0.15);
+    /* background-color:#22825b; */
+}
+
+
+.cards img {
+    border-radius: 5%;
+}
+
+header {
+    border-bottom: 1px solid rgba(145, 145, 145, 0.15);
 }
