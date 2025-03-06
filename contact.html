@@ -28,18 +28,16 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-contact">
         <section id="contact">
-            <form>
+            <h1>Contact</h1>
+            <form action="" method="GET">
                 <fieldset>
                     <legend>Datos de contacto</legend>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name">
-                    <label for="age">Edad</label>
-                    <input type="number" name="age" id="age">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="language">Idioma</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <label for="language">Language</label>
                     <select name="language" id="language">
                         <option value="eus">Euskera</option>
                         <option value="es">Castellano</option>
@@ -48,17 +46,13 @@
                     <div class="newsletter-input">
                         <label for="subscribe">Quieres suscribirte a mi newsletter?</label>
                         <input type="checkbox" name="subscribe" id="subscribe">
-                    </div>
-                    <label>Tu equipo favorito</label>
-                    <div class="team-inputs">
-                        <label for="teathleticam">Athletic Club</label>
-                        <input type="radio" name="team" id="team" value="Athletic Club">
-                        <label for="teathleticam">Real Sociedad</label>
-                        <input type="radio" name="team" id="team" value="Real Sociedad">
-                    </div>
+                    </div>                    
                 </fieldset>
-                <label for="content">Escribe tu mensaje</label>
-                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="contact-buttons">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </div>
             </form>
         </section>
     </main>
@@ -66,12 +60,12 @@
         <ul class="contact-list">
             <li class="contact-link">
                 <a href="https://linkedin.com">
-                    <i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i>
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #63E6BE;"></i>
                 </a>
             </li>
             <li class="contact-link">
                 <a href="https://github.com">
-                    <i class="fa-brands fa-github" style="color: #63E6BE;"></i>
+                    <i class="fa-brands fa-github fa-xl" style="color: #63E6BE;"></i>
                 </a>
             </li>
         </ul>
