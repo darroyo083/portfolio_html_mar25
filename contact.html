@@ -31,27 +31,27 @@
     <main class="main-contact">
         <section id="contact">
             <h1>Contact</h1>
+            <div class="personal-info">
+                <div class="personal-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:example@mail.com">example@example.com</a>
+                </div>
+                <div class="personal-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+34111111111" id="phone-number">123123123</a>
+                </div>
+            </div>
             <form action="" method="GET">
-                <fieldset>
-                    <legend>Datos de contacto</legend>
+                <div class="form-inputs">
                     <input type="text" name="name" id="name" placeholder="Name">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="text" name="subject" id="subject" placeholder="Subject">
-                    <label for="language">Language</label>
-                    <select name="language" id="language">
-                        <option value="eus">Euskera</option>
-                        <option value="es">Castellano</option>
-                        <option value="en">English</option>
-                    </select>
                     <div class="newsletter-input">
-                        <label for="subscribe">Quieres suscribirte a mi newsletter?</label>
-                        <input type="checkbox" name="subscribe" id="subscribe">
-                    </div>                    
-                </fieldset>
+                    </div>
+                </div>
                 <textarea name="content" id="content" cols="30" rows="10" placeholder="Message"></textarea>
-                <div class="contact-buttons">
+                <div class="contact-button">
                     <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
                 </div>
             </form>
         </section>
