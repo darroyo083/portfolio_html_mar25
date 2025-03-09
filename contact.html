@@ -43,13 +43,11 @@
             </div>
             <form action="" method="GET">
                 <div class="form-inputs">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
-                    <div class="newsletter-input">
-                    </div>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 </div>
-                <textarea name="content" id="content" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="Message" required></textarea>
                 <div class="contact-button">
                     <input type="submit" value="Send">
                 </div>
@@ -60,12 +58,12 @@
         <ul class="contact-list">
             <li class="contact-link">
                 <a href="https://linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-xl" style="color: #63E6BE;"></i>
+                    <i class="fa-brands fa-linkedin fa-xl" ></i>
                 </a>
             </li>
             <li class="contact-link">
                 <a href="https://github.com">
-                    <i class="fa-brands fa-github fa-xl" style="color: #63E6BE;"></i>
+                    <i class="fa-brands fa-github fa-xl"></i>
                 </a>
             </li>
         </ul>
